@@ -1,0 +1,31 @@
+{
+  "name": "vite-plugin-wp-cjs-externals",
+  "version": "1.0.0",
+  "description": "Lets block editor code that uses older-style packages share the WordPress scripts already on the page, alongside @roots/vite-plugin.",
+  "private": true,
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "vite",
+    "wordpress",
+    "sage",
+    "block-editor"
+  ],
+  "author": "Chris Sorrentino <chrissorren@gmail.com>",
+  "dependencies": {
+    "@wordpress/dependency-extraction-webpack-plugin": "^6.56.0"
+  },
+  "peerDependencies": {
+    "@roots/vite-plugin": ">=2.0.0",
+    "vite": ">=6.0.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
